@@ -1,0 +1,69 @@
+public class Product {
+  private String name;
+  private int id;
+  private String SKU; // stock keeping unit (a unique code for each product)
+  private String description;
+  private String category;
+  private float price;
+
+  Product(int id, String name, String SKU, String description, String category, float price) {
+    this.name = name;
+    this.id = id;
+    this.SKU = SKU;
+    this.description = description;
+    this.category = category;
+    this.price = price;
+
+  }
+
+  // Getter
+  public String getSKU() {
+    return SKU;
+  }
+
+  public String getdescription() {
+    return description;
+  }
+
+  public String getcategory() {
+    return category;
+  }
+
+  public float getprice() {
+    return price;
+  }
+
+  public String getname() {
+    return name;
+  }
+
+  // Setter
+  public void setSKU(String newSKU) {
+    this.SKU = newSKU;
+  }
+
+  public void setdescription(String newdescription) {
+    this.description = newdescription;
+
+  }
+
+  public void setcategory(String newcategory) {
+    this.category = newcategory;
+  }
+
+  public void setprice(float newprice) {
+    this.price = newprice;
+  }
+
+  public void setname(String newname) {
+    this.name = newname;
+
+  }
+
+  // toString
+  public String toString() {
+    return "id: " + id + " \nItem Name: " + name + " \nSKU: " + SKU + " \nDescription: " + description + " \nCategory: "
+        + category + " \nPrice: " + price;
+
+  }
+}
